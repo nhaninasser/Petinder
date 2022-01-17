@@ -24,7 +24,7 @@ Local Storage
 
 
 ## Link to Live Webpage
-[Petinder](https://danielle-gan.github.io/petinder/index.html) 
+[Petinder](https://nhaninasser.github.io/Petinder/) 
 
 ## Made With
 - HTML
