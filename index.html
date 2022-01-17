@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/3690dc5235.js" crossorigin="anonymous"></script>
+    <title>Petinder</title>
+</head>
+
+<body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="field">
+                <label class="label">🐾 Name</label>
+                <div class="control">
+                    <input id="name" class="input" type="text" placeholder="Name">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">🐾 Zip Code</label>
+                <div class="control">
+                    <input id="postalCode" class="input" type="text" placeholder="Zip Code">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">🐾 Are you a dog or a cat person?</label>
+            </div>
+            <div class="field">
+                <form class="control">
+
+                    <label class="radio">
+                        <input id="speciesDog" type="radio" name="species">
+                        Dog
+                    </label>
+                    <label class="radio">
+                        <input id="speciesCat" type="radio" name="species">
+                        Cat
+                    </label>
+
+                </form>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button id="submitBtn" class="button is-link is-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="columns is-flex is-justify-content-space-between is-align-items-center">
+        <div class="column is-justify-content-left">
+            <img src="./assets/images/petinder-emblem.png" class="logo">
+        </div>
+        <div class="column has-text-centered">
+            <h1 class="title"> Petinder </h1>
+        </div>
+        <div class="column">
+            <button class="button is-medium is-light is-warning" id="favorites">
+                Favorites
+            </button>
+        </div>
+    </header>
+    <section class="has-text-centered">
+        <h2 class="subtitle">Tinder... but for pets. Find your pawfect match!</h2>
+    </section>
+
+    <main class="has-text-centered">
+        <div class="card">
+            <div class="card-image clear">
+                <p class="reload"> If you don't see any pets here, refresh the page!</p>
+                <img class= "img-size" src="./assets/images/smiley-face.jpg">
+            </div>
+            <div class="btns m-4">
+                <div class="button is-danger is-large" id="no-but"><i class="fas fa-sad-tear"></i></div>
+                <div class="button is-success is-large" id="yes-but"><i class="fas fa-grin-hearts"></i></div>
+            </div>
+            <div class="name clear">
+            </div>
+        </div>
+        <br>
+        <button class="fact clear-fact is-dark" id="fact"></button>
+    </main>
+
+    <footer>
+        <div class="footer content has-text-centered">
+            <p>❤️ Made with love by Petinder</p>
+            <div>
+                &copy; 2022 Petinder, Inc.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@petfinder/petfinder-js/dist/petfinder.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/script2.js"></script>
+</body>
+
+</html>
