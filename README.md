@@ -35,5 +35,4 @@ Local Storage
 - FontAwesome API
 - Petfinder API
 - Cat-Facts API
-# Petinder
-# Petinder
+
